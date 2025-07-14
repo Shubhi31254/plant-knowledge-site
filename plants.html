@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🌿 Plant Knowledge Hub</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+  <div class="navbar-brand">🌱 PlantWorld</div>
+  <nav class="navbar-links">
+    <a href="#types">Types</a>
+    <a href="#care">Care</a>
+    <a href="#tips">Tips</a>
+    <a href="#contact">Contact</a>
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider round"></span>
+    </label>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>Welcome to the World of Plants 🌿</h1>
+  <p>Discover, nurture, and fall in love with plants! Learn all about types, care tips, and more.</p>
+  <button class="btn success">Explore Now</button>
+  <img src="https://media.giphy.com/media/3ohc0UQIlcPcfDUNkY/giphy.gif" alt="Plant GIF" class="hero-gif" />
+</section>
+
+<!-- Plant Types -->
+<section id="types" class="section">
+  <h2>Popular Plant Types</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Succulents 🌵</h3>
+      <p>Low-maintenance and super cute!</p>
+    </div>
+    <div class="card">
+      <h3>Ferns 🌿</h3>
+      <p>Love moisture and shade. Great for bathrooms.</p>
+    </div>
+    <div class="card">
+      <h3>Air Plants 🌬️</h3>
+      <p>No soil? No problem. Just mist regularly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Plant Care -->
+<section id="care" class="section alt">
+  <h2>How to Take Care</h2>
+  <ul class="care-list">
+    <li><span class="badge success">1</span> Water only when soil is dry</li>
+    <li><span class="badge info">2</span> Use indirect sunlight</li>
+    <li><span class="badge warning">3</span> Allow airflow to prevent fungus</li>
+    <li><span class="badge danger">4</span> Don’t over-fertilize!</li>
+  </ul>
+  <img src="https://media.giphy.com/media/l4FGI8GoTL7N4DsyI/giphy.gif" class="care-gif" />
+</section>
+
+<!-- Tooltip, Toggle, Dropdown -->
+<section id="tips" class="section">
+  <h2>Pro Plant Tips</h2>
+  <button class="tooltip">Hover me
+    <span class="tooltiptext">Keep leaves clean with a damp cloth!</span>
+  </button>
+
+  <div class="dropdown">
+    <button class="btn secondary">Choose Plant Skill</button>
+    <div class="dropdown-content">
+      <a href="#">Beginner</a>
+      <a href="#">Intermediate</a>
+      <a href="#">Expert</a>
+    </div>
+  </div>
+
+  <label class="switch-label">Care Reminder:
+    <input type="checkbox">
+    <span class="toggle-slider"></span>
+  </label>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="section alt">
+  <h2>Stay Connected</h2>
+  <form class="form">
+    <label>Your Name:</label>
+    <input type="text" placeholder="Name" />
+    <label>Email Address:</label>
+    <input type="email" placeholder="you@example.com" />
+    <button class="btn primary">Subscribe</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>Made with 🌱 by Plant Lovers | © 2025 PlantWorld</p>
+</footer>
+
+<script>
+  document.getElementById("darkToggle").addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+  });
+</script>
+
+</body>
+</html>
